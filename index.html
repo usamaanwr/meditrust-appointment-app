@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Appointment Website</title>
+<link rel="icon" type="image/png" href="/assets/homepageimages/favicon.svg" sizes="96x96" />
+
+    <!-- Bootstrap Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- SweetAlert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+<!-- Toastify.js -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/slider.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar bg-light fixed-top">
+      <div class="container">
+        <div class="nav_logo">
+          <h2>
+            MediTrust <span><i class="fa-solid fa-stethoscope"></i></span>
+          </h2>
+         
+        </div>
+        <div class="links">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="./HTML/about.html">About Us</a>
+            <a class="nav-link" href="./HTML/services.html">Services</a>
+            <a class="nav-link" href="../HTML/myAppointment.html">My Appointment</a>
+            <a class="nav-link" href="./HTML/contact.html">Contat Us</a>
+          </li>
+        </div>
+        <!-- navicon user cand carts -->
+        <div class="nav_icon">
+          <div>
+            <button type="submit" id="Booking" class="bookin_btn">
+  <a href="./HTML/bookAppointment.html">Booking Now</a>            </button>
+          </div>
+          <div>
+            <a href="./HTML/register.html"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              MediTrust <span><i class="fa-solid fa-stethoscope"></i></span>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="./Index.html">Home</a>
+                <a class="nav-link" href="./HTML/about.html">About Us</a>
+                <a class="nav-link" href="./HTML/services.html"
+                  >Services</a
+                >
+                 <a class="nav-link" href="./HTML/myAppointment.html">My Appointment</a>
+                               <a class="nav-link" href="./HTML/contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./HTML/login.html"
+                      >Sign in</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./HTML/register.html"
+                      >Sign Up</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Slider -->
+    <section>
+      <div class="slider-container">
+        <div class="slider-wrapper swiper-wrapper">
+          <div class="slider-item swiper-slide">
+            <div class="slide-content">
+              <h3 class="slide-subtitle">Your Health Matters</h3>
+              <h2 class="slide-title">Book Expert Doctors Instantly</h2>
+              <p class="slide-description">
+                Find top specialists and book appointments online within
+                minutes.
+              </p>
+            </div>
+          </div>
+
+          <div class="slider-item swiper-slide">
+            <div class="slide-content">
+              <h3 class="slide-subtitle">Trusted Specialists</h3>
+              <h2 class="slide-title">Consult the Best Cardiologists</h2>
+              <p class="slide-description">
+                Get expert care for your heart from verified cardiologists.
+              </p>
+            </div>
+          </div>
+
+          <div class="slider-item swiper-slide">
+            <div class="slide-content">
+              <h3 class="slide-subtitle">Affordable Care</h3>
+              <h2 class="slide-title">Family & General Physicians</h2>
+              <p class="slide-description">
+                Connect with experienced doctors anytime — from your home.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Pagination -->
+        <div class="slider-controls">
+          <ul class="slider-pagination">
+            <div class="slider-indicator"></div>
+            <li class="slider-tab current">Book a Doctor</li>
+            <li class="slider-tab">Heart Specialists</li>
+            <li class="slider-tab">Family Physicians</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Text & Categories -->
+    <section>
+      <div class="container text-center">
+        <div class="main_heading_home">
+          <h1>Welcome to MediTrust</h1>
+          <div class="line"></div>
+          <p>
+            Our goal is to make healthcare simple and accessible. Through our
+            platform, patients can easily book appointments with trusted
+            doctors.
+          </p>
+        </div>
+
+        <div
+          class="catogory d-flex flex-wrap justify-content-center gap-4 mt-4"
+        >
+          <div class="category_card">
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+            <h5>General Medicine</h5>
+          </div>
+
+          <div class="category_card">
+            <span><i class="fa-solid fa-tooth"></i></span>
+            <h5>Dental Care</h5>
+          </div>
+
+          <div class="category_card">
+            <span><i class="fa-solid fa-eye"></i></span>
+            <h5>Eye Care</h5>
+          </div>
+
+          <div class="category_card">
+            <span><i class="fa-solid fa-heart-pulse"></i></span>
+            <h5>Cardiology</h5>
+          </div>
+
+          <div class="category_card">
+            <span><i class="fa-solid fa-brain"></i></span>
+            <h5>Neurology</h5>
+          </div>
+
+          <div class="category_card">
+            <span><i class="fa-solid fa-baby"></i></span>
+            <h5>Pediatrics</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Doctor Section -->
+    <section>
+      <div class="doctor_section">
+        <div class="container text-center">
+          <h1>Meet Our Experienced Doctors</h1>
+          <div class="line"></div>
+          <p>
+            At MediTrust Hospital, our doctors bring years of experience,
+            compassion, and dedication to ensure your health and comfort.
+          </p>
+
+          <div id="alldoctorData" class="cards_flex">
+           
+        </div>
+      </div>
+    </section>
+     <!-- footer section -->
+    <section>
+      <!-- footer section start  -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-container">
+            <div class="footer-column">
+              <h2>
+                MediTrust <span><i class="fa-solid fa-stethoscope"></i></span>
+              </h2>
+              <div class="about_footer">
+                <p>Welcome to Hospital Booking</p>
+
+                <p>
+                  patients can easily book appointments with trusted doctors,
+                  choose a convenient date and time, and manage their visits—all
+                  in one place.
+                </p>
+              </div>
+            </div>
+
+            <div class="footer-column">
+              <h4>TRENDING SEARCHES</h4>
+              <ul>
+                <li><a href="#">Cardiologist</a></li>
+                <li><a href="#">ENT Specialist</a></li>
+                <li><a href="#">Pediatrician</a></li>
+                <li><a href="#">Orthopedic Surgeon</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>CONTACT INFO</h4>
+              <div class="about_footer">
+                <p>Got a question or need help? We’re here for you!</p>
+                <h5><b>Email:</b>myshope34@gmail.com</h5>
+                <h5><b>Phone:</b>1 (234) 567-8900</h5>
+                <h5>
+                  <b>Address:</b>123 Market Street, Suite 456, New York, USA
+                </h5>
+              </div>
+            </div>
+
+            <div class="footer-column social" sty>
+              <h4>SOCIAL</h4>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+              <form action="#">
+                <input type="text" placeholder="Your email" required />
+                <button type="submit">SUBSCRIBE</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="bottom">
+        <div class="container">
+          <div class="copy">
+            <h6>Classified in Pakistan</h6>
+            <p>.2006-2025</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script type="module" src="./JS/render.js"></script>
+    <script src="/JS/slider.js"></script>
+  </body>
+</html>
