@@ -1,0 +1,143 @@
+.appointments_section{
+    margin-top: 150px   ;
+}
+.doctor_appointment{
+    display: flex;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+align-items: center;
+justify-content: space-around;
+}
+#appointmentForm {
+width: 600px;
+}
+
+#appointmentForm div input{
+width: 100%;
+margin-bottom: 16px;
+padding: 10px;
+outline: none;
+border: none;
+border-radius: 4px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.Doctors_day{
+
+width: 100%;
+margin-bottom: 16px;
+padding: 10px;
+outline: none;
+border: none;
+border-radius: 4px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);}
+.reason{
+    display: flex;
+    flex-direction: column;
+}
+.reason textarea{
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 200px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
+}.card img{
+    width: 300px;
+}
+.card{
+    width: 300px;
+    border: none;
+}
+.card h4{
+    margin-top: 10px;
+}
+#submit_appointment{
+    margin-top: 20px;
+     background-color: orange; /* teal green */
+  color: white;
+  border: none;
+  width: 200px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+ .doctor_appointment{
+display: flex;
+flex-direction: column;
+align-items: center;
+ }
+ #appointmentForm{
+  margin-top: 20px;
+  max-width: 400px;
+ }
+
+}
+@media screen and (max-width: 600px) {
+.card{
+    width: 200px;
+  
+}
+.card img{
+    width: 200px;;
+}
+
+ #appointmentForm{
+  margin-top: 20px;
+  max-width: 400px;
+ }
+
+}
+
+/* user Appointment  */
+
+.user_Appointment{
+    margin-top: 200px;
+}
+.userDetail{
+display: flex;justify-content: space-between;
+    width: 500px;
+    height: 100%P;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 25px auto;
+}
+.appointment{
+    display: flex;
+    align-items: center;
+   gap: 40px;
+}
+.doctorDetail{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.doctorDetail h5{
+    font-size: 12px;
+}
+.doctorDetail img{
+    width: 100px;
+}
+.userDetail span{
+    font-size: 16px;
+    cursor: pointer;
+}
+.icon_user{
+    display: flex;
+    gap: 10px;
+}
+.userDetail span:hover{
+    color: red;
+}
+
+.line{
+    width: 120px;
+    height: 6px;
+    background-color: orange;
+    border-radius: 10px;
+    margin: 20px auto;
+}
